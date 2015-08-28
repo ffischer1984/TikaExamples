@@ -75,11 +75,13 @@
 
     <div class="jumbotron inverse">
       <div class="container">
-        <h1>Give me text!</h1>			
+        <h1>Give me text!</h1>		
+<p>An easy to use free web service to extract text from PDFs and other documents - OCR support included!</p>	
 <form id="myform" method="POST" enctype="multipart/form-data" action="http://givemetext.okfnlabs.org/tika/form">
-				File: <input type="file" name="file">
-				<br/>
-				<input style="color: black;" type="submit" value="Get Content">
+    <span class="btn btn-default btn-file">
+        Choose a file... <input type="file" name="file">
+    </span>				
+				<input style="color: black;" type="submit" class="btn btn-lg btn-primary" value="Get Content">
 			</form>
 			<div id="result" class="highlight" style="display:none;">
 			</div>
