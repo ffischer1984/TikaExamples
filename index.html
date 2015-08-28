@@ -35,6 +35,7 @@
 
     <!-- Place favicon.ico in the root directory -->
 
+    <link rel="stylesheet" href="custom.css">
     <link rel="stylesheet" href="//okfnlabs.org/ok-panel/assets/css/frontend.css"/>
     <link rel="stylesheet" href="app-theme/css/main.css">
     <script src="app-theme/js/vendor/modernizr-2.8.3.min.js"></script>
@@ -85,7 +86,7 @@
         <span class="btn btn-default btn-file">
         Choose a file... <input type="file" name="file">
         </span>				
-	    <input style="color: black;" type="submit" class="btn btn-lg btn-primary" value="Get Content">
+	    <input style="color: black;" type="submit" class="btn btn-primary" value="Get Content">
 		</form>
 		<div id="result" class="highlight" style="display:none;">
 		</div>
@@ -119,6 +120,7 @@
           <p>Current TODOs include:</p>
           <ul>
             <li>Enabling passing of a URL using the web form. The API should support it; see the relevant <a href="https://github.com/okfn/ideas/issues/88#issuecomment-132890617">GitHub issue</a>.</li>
+            <li>Allow the user to provide the language of the document being OCR'd (see link above regarding OCR + server) and possibly add support for more languages (the <a href="https://github.com/mattfullerton/tika-tesseract-docker/blob/master/install.sh#L14">Dockerfile currently includes English and German</a>).
           </ul>
       </div>
       <div class="row">
