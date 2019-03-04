@@ -108,7 +108,7 @@
 
           <p>Behind the site is an instance of the <a href="http://wiki.apache.org/tika/TikaJAXRS">Apache Tika Server</a>, which takes the files and processes them with the Tika engine. The endpoint for the complete API is at <a href="http://givemetext.okfnlabs.org/tika">http://givemetext.okfnlabs.org/tika</a>. The endpoint for the text extraction service is at <a href="http://givemetext.okfnlabs.org/tika/tika">http://givemetext.okfnlabs.org/tika/tika</a>, but there is <a href="http://wiki.apache.org/tika/TikaJAXRS#Services">a bunch of other useful services too</a>. Check out the <a href="http://wiki.apache.org/tika/TikaJAXRS#Services">Tika Documentation</a> for full details, and don't forget the extra 'tika' in the path compared to the documentation.</p>
           <p>Here's a simple example using curl to get text from a TIF image:</p>
-          <code>curl -T my_image.tif http:///beta.offenedaten.de:9998/tika</code><br><br>
+          <code>curl -T my_image_300dpi.tif http://givemetext.okfnlabs.org/tika/tika -H "Content-type: image/tiff" -H "X-Tika-OCRLanguage: eng"</code><br><br>
           <p>That command uses a <code>PUT</code> request. If you'd like to <code>POST</code>, for example using a web form, you can use <a href="http://givemetext.okfnlabs.org/tika/tika/form">http://givemetext.okfnlabs.org/tika/tika/form</a>.
           <p>Note that there is some special advice on using OCR with the Tika server <a href="https://wiki.apache.org/tika/TikaOCR#Using_Tika_Server_and_Tesseract">here</a>.
       </div>
